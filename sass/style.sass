@@ -1,0 +1,268 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+
+.header
+    width: 100%
+    &_promo
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 47px
+        background-color: #B36050
+        p
+            font-size: 17px
+            color: #F1D3B9
+    &_nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 71px
+        position: relative
+        z-index: 1
+        background-color: #F6F4EC
+        ul
+            margin-left: 22px
+            list-style: none
+            li
+                display: inline-block
+                margin-right: 32px
+                &:last-child
+                    margin-right: 0
+                a
+                    font-size: 18px
+                    color: #B4604D
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+        .logo
+            width: 120px
+            height: 56px
+            position: absolute
+            top: -29%
+            left: 42%
+            transform: translate(50%, 50%)
+            z-index: 10
+        .purchase
+            display: flex
+            margin-right: 12px
+            a
+                font-size: 14px
+                color: #B4604D
+                text-decoration: none
+                margin-right: 45px
+                &:hover
+                    text-decoration: underline
+            div
+                position: relative
+                color: #B4604D
+                cursor: pointer
+                &::before
+                    content: url(/img/icon.svg)
+                    position: absolute
+                    top: -4px
+                    left: -25px
+
+.main
+    width: 100%
+    height: 435px
+    padding: 332px 0 55px 0
+    background: url(/img/2.jpg) no-repeat
+    &_btn
+        display: block
+        margin: 0 auto
+        padding: 10px 20px 10px 20px
+        font-size: 17px
+        color: #fff
+        background-color: #B45F4D
+        border: none
+        cursor: pointer
+
+.now
+    height: 304px
+    padding: 69px 0 69px 70px
+    color: #F6F4EC
+    background-color: #A9AE8D
+    &_promo
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 40px
+    &_title
+        font-size: 33px
+        margin-bottom: 55px
+    &_substr
+        font-size: 16px
+
+.shop
+    width: 100%
+    height: 835px
+    padding-top: 40px
+    color: #B45F4D
+    background-color: #F6F4EC
+    &_title
+        font-size: 23px
+        text-align: center
+        margin-bottom: 40px
+    &_wrapper
+        width: 1300px
+        height: 624px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &_item
+        width: 380px
+        cursor: pointer
+    &_name
+        font-size: 18px
+        margin-top: 9px
+    &_price
+        margin-top: 7px
+        margin-bottom: 27px
+        font-size: 16px
+    &_rarrow
+        margin-left: 314px
+
+.sets
+    width: 100%
+    height: 487px
+    padding: 24px 0 50px 0
+    &_box
+        display: flex
+        align-items: flex-end
+        width: 1219px
+        height: 414px
+        margin: 0 auto
+        background: url('/img/6.png')
+        div
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 1219px
+            height: 92px
+            padding: 0 30px 0 30px
+            color: #F6F4EC
+            background-color: #DF9B7A
+            h2
+                font-size: 20px
+                text-transform: uppercase
+            a
+                font-size: 18px
+                color: #F6F4EC
+                text-decoration: none
+
+.intro
+    width: 100%
+    height: 1069px
+    position: relative
+    color: #B45F4D
+    background-color: #F1D3B9
+    .img1
+        position: absolute
+        top: 535px
+        left: 100px
+        z-index: 10
+    .img2
+        position: absolute
+        top: 61px
+        left: 183px
+        z-index: 1
+    &_box
+        position: absolute
+        top: 285px
+        left: 765px
+        z-index: 50
+        width: 518px
+        height: 582px
+        padding-top: 65px
+        padding-left: 50px
+        background-color: #f8f8f8
+        a
+            font-size: 16px
+            color: #B45F4D
+            text-decoration: none
+    &_title
+        font-size: 30px
+        text-align: center
+        margin-bottom: 40px
+    &_descr
+        font-size: 19px
+        margin-bottom: 50px
+
+.follow
+    height: 284px
+    padding: 23px 0 40px 0
+    &_title
+        font-size: 23px
+        text-align: center
+        margin-bottom: 43px
+    &_wrapper
+        display: flex
+        justify-content: space-around
+        .item1
+            background: url(/img/9.jpg)
+        .item2
+            background: url(/img/10.jpg)
+        .item3
+            background: url(/img/11.jpg)
+        .item4
+            background: url(/img/12.jpg)
+        .item5
+            background: url(/img/13.jpg)
+    &_item
+        width: 230px
+        height: 130px
+        box-shadow: 0px 0px 45px -7px rgba(0,0,0,0.75)
+        img
+            display: block
+            margin: 0 auto
+            margin-top: 73px
+
+.footer
+    width: 100%
+    height: 400px
+    border-top: 1px solid #F1D3B9
+    background-color: #F6F4EC
+    padding-top: 62px
+    padding-bottom: 61px
+    padding-left: 50px
+    color: #B45F4D
+    &_upblock
+        width: 95%
+        height: 156.25px
+        display: flex
+        justify-content: space-between
+        align-content: flex-start
+    &_list
+        width: 402px
+        display: flex
+        ul
+            list-style: none
+            width: 201px
+            height: 128px
+            li
+                margin-bottom: 12px
+                a
+                    font-size: 14px
+                    color: #B45F4D
+                    text-decoration: none
+    &_contform
+        input
+            width: 421px
+            padding-top: 9px
+            padding-bottom: 9px
+            padding-left: 10px
+            border: 1px solid #B45F4D
+            outline: none
+            color: #B45F4D
+    &_formtitle
+        font-size: 14px
+        margin-bottom: 14px
+    &_conttext
+        font-size: 14px
+        margin-top: 20px
+    &_postscriptum
+        margin-top: 112px
